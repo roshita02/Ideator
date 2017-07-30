@@ -11,27 +11,14 @@
 <body>
   
 <nav class="navbar navbar-default">
- 
-<div class="navbar-header">
-  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-    <span class="sr-only">Toggle navigation</span>
-    <span class="icon-bar"></span>
-    <span class="icon-bar"></span>
-    <span class="icon-bar"></span>
-  </button>
-  <a class="navbar-brand" href="/">Ideator</a>
-</div>
-    <ul class="nav navbar-nav navbar-right">
-      <li><a href="#">Page 1</a></li>
-      <li><a href="#">Page 2</a></li>
-      <li><a href="#">Page 3</a></li>
-    </ul>
-  </div>
+ <div id="wrap">
+ <%= render 'shared/nav' %>
 </nav>
-
-  
-
-<%= yield %>
-
+ <div class = "container">
+      <%= yield %>
+    </div>
+    
+  </div><!-- wrap -->
+  <%= render 'shared/foot' %>
 </body>
 </html>
